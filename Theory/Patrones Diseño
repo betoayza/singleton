@@ -1,0 +1,57 @@
+PATRONES DE DISEÑO:
+-------------------
+
+ * Son estándares o convenciones entre los desarrolladores de software acerca de cómo abordar un determinado problema
+ 
+ * No deben sustituir la creatividad e ingenio del programador
+ 
+ * Se pueden agrupar en 2 tipos:
+ 	1- Estructurales
+ 	2- Creacionales
+ 	
+ 1- Estructurales:
+ 	* Tienen que ver en cómo se relacionan las clases y objetos
+ 	* Ej.: Adapter, Decorator, Fakade (Fachada)
+ 	
+ 		a- Adapter:
+ 			Se utiliza para adaptar código viejo 
+ 			Se trata de una clase intermediaria
+ 			Ej: Adaptar librerías antiguas
+ 			
+ 		b- Decorator:
+ 			Añade funcionalidad a una clase ya existente sin modificarla
+ 			Requiere de una interfaz
+ 			Ej: Una clase que implementa un interfaz		
+ 			
+ 		c- Fakade (fachada):
+ 			Se utliza para hacer más sencillo un código complejo
+ 			El desarrollador no necesita saber cómo funciona
+ 			Simplemente lo ejecuta de una manera sencilla, elegante
+ 			Ej: un método ".convertirFormato()" llama todo el código complicado alojado en otras clases
+ 	
+ 2- Creacionales:
+ 	* Tienen que ver con la instanciación de objetos
+ 	* Ej.: Singleton, Builder, Prototype y Factory
+ 	
+ 	a- Singleton:
+ 		Evita que una clase se instancie más de una vez
+ 		Lo logra haciendo que siempre se apunte a la misma zona de memoria
+ 		Ej: cuando se trata de acceso a un mismo fichero
+ 	b- Builder:
+ 		Una clase se instancia dentro de otra
+ 		La clase contenedora se devuelve a sí misma
+ 		Ej: El caso de String Builder
+ 	c- Prototype:
+ 		Un objeto se clona a sí mismo
+ 		El clon hereda todas las propiedades
+ 		Previene la duplicación de código
+ 		Ej: Copia de objetos inmutables --> fotocopiadora
+ 	d- Factory:
+ 		Consta de una "Jerarquía de clases"
+ 		Clases implementan una interface
+ 		Depende de qué parámetro se le pase
+ 		Ej: Una "Pizza" puede ser una clase abstracta la cual puede ser implementada por "PizzaMuzzarella" o "PizzaAnchoas"
+ 		
+ 		
+ 		
+ 			
